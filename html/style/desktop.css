@@ -1,0 +1,56 @@
+/*SEZIONE GENERALE*/
+html, body{ 
+	margin: 0px; 
+	padding: 0px;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:0.9em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-variant: small-caps;
+}
+/*FINE SEZIONE GENERALE*/
+
+/*HEADER*/
+
+/*PATH*/
+
+#path{
+    margin: 0;
+    background-color:#2b0db1;
+    color:#88BBEE;   
+}
+/*FINE PATH*/
+
+/*NAV*/
+#nav{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    min-width: 100%;
+    background-color: #FF00FF;
+}
+
+#nav ul {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+#nav li{
+    font-size: 1.4em;
+    display: inline-block;
+    padding: 1em;
+    margin-left: -0.4em;
+    margin-bottom: -0.1em;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #C0FFEE;
+
+}
+
+#main {
+    background-color: white;
+}
+
+
