@@ -1,0 +1,249 @@
+/*generale*/
+html, body{ 
+	margin: 0px; 
+	padding: 0px;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:0.9em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-variant: small-caps;
+}
+
+/*login*/
+#login{
+    margin-top: -0.5em;
+    float:right;
+    background-color: purple;
+    padding-right: 0.5em;
+    
+}
+#login li{
+    list-style-type: none;
+    float:left;
+
+}
+/*fine login*/
+
+/*
+NB TUTTI I COLORI USATI SONO TEMPORANEI, USATI SOLO COME TRACCE PER DISTINGUERE I VARI ELEMENTI E LE VARIE SITUAZIONI PIU' FACILMENTE
+*/
+/*header*/
+#header{
+	width:100%;
+	background-color:purple;
+	color:white;
+	overflow:hidden;
+	padding-bottom:0.5em;
+}
+#logo{
+	background-image: url("immagini/logo.png");
+	background-repeat:no-repeat;
+	width:7em;
+	height:7em;
+	float:left;
+	padding-right:1em;
+	margin-left:0.5em;
+	margin-top:0.2em;
+	background-size: 7em 7em;
+}
+/*	se non è un immagine di contenuto (difficile visto che ci serve come ancora):
+	#logo img{
+	width:8em;
+	height:7em;
+	float:left;
+	}
+html relativo sengato su index.html, in forma di commento al div id="logo"
+	*/
+/*NB problema: perchè non riesco a liberarmi di quel dannato margine bianco ?!?*/
+/*fine header*/
+
+/*nav*/
+
+#nav{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    min-width: 100%;
+    background-color: #FF00FF;
+}
+
+#nav ul {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+#nav li{
+    font-size: 1.4em;
+    display: inline-block;
+    padding: 1em;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #C0FFEE;
+
+}
+#nav li:hover{
+	background-color:red;
+}
+
+/*#nav{
+	background-color:purple;	
+    padding-bottom: 3.5em;
+	}
+#nav ul{
+	list-style: none;
+	margin:0 auto;
+	text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#nav li{
+	background-color:red;
+	color:white;
+	float: left;
+	font-weight:bold;
+	display:inline-block;
+	text-align: center;
+	padding:1em;
+	margin: 0.1em;
+	
+}
+#nav li a{
+	color:white;
+	text-decoration:none;
+}
+#nav li:hover, #nav li a:hover{
+	background-color:pink;
+	color:yellow;
+}*/
+
+/*NB problema: 
+				-è cliccabile solo il testo del link, NON l'intera casella (BAD: tutta la casella deve servire da link)
+				-il menù sarebbe probabilmente più gradevole se prendesse l'intera pagina 
+				-le regole per hover dovrebbero essere usate anche per visited, ma x qualche ragione non vanno
+				-quando ridimensiono la pagina il viola dell'header non va ad adattarsi e a proseguire sotto il fondo delle caselle 
+				(dopo "HOME" le caselle si possono ritrovare ad avere sfondo bianco), soluzione semplice ma che modifica la struttura html(anche se credo in maniera accettabile):
+					=>rendere il div "nav" figlio di "header"
+				*/
+
+/*fine nav*/
+
+/*path*/
+#path{
+	margin:0 auto;
+	clear:left;
+	background-color:black;
+	color:white;
+	font-size:0.8em;
+	padding:0.3em 0.3em 0.3em 0.3em;
+}
+#path a{
+	color:white;
+}
+#path a:hover{
+	color:yellow;
+}
+/*fine path*/
+
+/*main*/
+
+#main {
+	min-width: 100%;
+}
+/*contenuto*/
+
+/*articolo*/
+.articolo{
+	text-align:center;
+	background-color:grey;
+	color:white;
+	float:left;
+	width: 50%;
+	min-width:auto;
+} 
+/*non so come renderlo accattivante ma vabbhè, x ora è testo a caso*/
+
+/*fine articolo*/
+
+/*galleria*/
+#galleria{
+	width:40em;
+	height:23em;
+	background-image:url("immagini/palestra1.jpg");
+	background-repeat:no-repeat;
+	margin-right:1em;
+	float:left;
+}
+/*
+NB problema: non è "fluido", è necessario che l'immagine occupi lo spazio in modo da riempire tutta la sezione 
+(vorrei che avesse un'aspetto simile alle gallery viste su mcfit.com x esempio);
+per rimediare ho temporaneamente affiancato la gallery alle news, invece che mettere 
+1)gallery
+2)breve testo di benvenuto
+3)notizie (piccolo riquadro a destra dell'articolo di benvenuto) 
+
+*/
+
+/*fine galleria*/
+
+/*fine contenuto*/
+
+/*notizie*/
+#notizie{
+	float: right;
+    min-width: 21.5em;
+    width:50%;
+	background-color:purple;
+	color:white;
+	min-width:auto;	
+}
+
+/*notiziaH*/
+dl{
+	padding-left:2em;
+}
+dt{
+	padding-left:2em;
+}
+dd{
+	padding-left:2em;
+}
+dt a{
+	color:white;
+	font-weight:bold;
+}
+.notiziaH a :hover{
+	color:yellow;
+}
+.notiaH  :hover{
+	background-color:pink;
+}
+/*notiziaH*/
+
+
+/*... stars above! what a mess:
+.notiziaH a :hover{
+	color:yellow;
+}
+.notiaH  :hover{
+	background-color:pink;
+}
+-non è fluido
+-avrà contenuto di dimensione varia quindi ciò è molto male
+-non riempie bene gli spazi
+-non vengono registrate le regole x hover
+-NB se cambiamo la struttura di notizie in una lista di dati "dl" bisogna cambiare gli indentificatori di selezione delle regole
+*/
+
+/*fine notizie*/
+
+/*fine main*/
+
+/*footer*/
+#footer{
+    background-color: black;
+    clear:both;
+    padding:0.1em;
+}
+/*fine footer*/
