@@ -1,0 +1,8 @@
+Programmazione	->manca attributo giorno
+		->manca attributo sala(?) x indicare in quale parte della palestra il corso viene svolto
+
+Persona:	->potrebbe servire uno o più attributi per contattare la persona (mail/ telefono o simile)
+
+tipologia abbonamento:-> mancano tutti gli attributi
+
+tipologia sceda.-> mancano tutti gli attributi 
