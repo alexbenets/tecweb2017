@@ -17,3 +17,11 @@ function special(id){
 				else
 					document.getElementById(id).style.display="none";
 			}
+			
+function color(id){
+	document.getElementById(id).style.backgroundColor="pink";
+}
+
+function decolor(id){
+	document.getElementById(id).style.backgroundColor="purple";
+}
