@@ -7,7 +7,7 @@
 			Home - Experience Gym
 		</title>
 		
-		<link rel="stylesheet" href="style/desktop.css" type="text/css" media="screen" charset="utf-8"/>
+		<link rel="stylesheet" href="../html/style/desktop.css" type="text/css" media="screen" charset="utf-8"/>
 
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta name="title" content="Experience Gym" />
@@ -33,7 +33,7 @@
 
 			<div id="banner">
 				<div id="logo">
-				<a href="index.html"><img src="style/immagini/logo.png" alt="logo"></a>
+				<a href="index.html"><img src="style/immagini/logo.png" alt="logo"></img></a>
 				</div><!-- chiudo logo -->
 
 				<h1>
